@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React from "react";
-import "../styles/output.css"
+import "../styles/output.css";
+import NavLink from "./nav-link";
 
 export default function RootLayout({
   children,
@@ -8,18 +8,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="bg-gray-900 text-gray-100 antialiased">
+    <html>
       <head>
         <title>My NextJS v13</title>
       </head>
       <body>
-        <header>
-          <nav>
-            <Link href="/"> Home </Link>
-            <Link href="/notes"> Notes </Link>
+        <header className="border-b p-4">
+          <nav className="space-x-4">
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/notes">Notes</NavLink>
           </nav>
         </header>
-        <main>{children}</main>
+        <main className="p-4">
+            {children}
+        </main>
       </body>
     </html>
   );

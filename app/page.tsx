@@ -1,8 +1,10 @@
+import "../styles/output.css"
+
 export default function HomePage() {
   return (
-    <div>
-      <h1>Main title</h1>
+    <>
+      <h1 className="pageTitle">Home</h1>
       <p>Hello World</p>
-    </div>
+    </>
   );
 }

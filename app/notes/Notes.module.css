@@ -1,0 +1,47 @@
+.grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.action {
+  text-align: left;
+  color: dodgerblue;
+}
+
+.note {
+  height: auto;
+  width: 12rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  background: #f9e404;
+  color: black;
+  box-shadow: 4px 4px 8px 1px #908e8e75;
+  border-radius: 2px;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.title {
+  padding: 0.1rem;
+  font-size: 1rem;
+}
+
+.content {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.created {
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.action {
+  text-align: left;
+  color: dodgerblue;
+}
